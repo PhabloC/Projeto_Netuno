@@ -1,0 +1,47 @@
+form {
+  height: 97%; /* Bootstrap: Não há uma classe direta para definir altura em porcentagem. Você pode usar o estilo "height: 97vh;" ou criar uma classe personalizada. */
+  width: 94%; /* Bootstrap: Não há uma classe direta para definir a largura em porcentagem. Você pode usar o estilo "width: 94%;" ou criar uma classe personalizada. */
+  max-height: 90vh; /* Bootstrap: Não há uma classe direta para definir altura máxima em porcentagem da viewport. Você pode usar o estilo "max-height: 90vh;" ou criar uma classe personalizada. */
+  background-color: $color-white; /* Bootstrap: Você pode usar as classes de cores do Bootstrap, como "bg-white". */
+  z-index: 1000; /* Bootstrap: Não aplicável ao Bootstrap, pois ele é usado principalmente para empilhamento de camadas em elementos posicionados. */
+  border-radius: 1vw; /* Bootstrap: Você pode usar a classe "rounded" para arredondar os cantos do formulário. */
+  @extend .flexCenter; /* Bootstrap: Não aplicável ao Bootstrap, pois ele não suporta a extensão de classes como o Sass. Você precisará aplicar as propriedades individualmente. */
+  flex-direction: column; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap não usa flexbox dessa maneira. Você pode precisar de um layout personalizado. */
+
+  .form-data {
+      font-size: 1.1vh; /* Bootstrap: Você pode definir o tamanho da fonte usando as classes de tipografia do Bootstrap, como "small" ou "text-sm". */
+      height: 35%; /* Bootstrap: Não há uma classe direta para definir altura em porcentagem. Você pode usar o estilo "height: 35%;" ou criar uma classe personalizada. */
+      width: 90%; /* Bootstrap: Não há uma classe direta para definir a largura em porcentagem. Você pode usar o estilo "width: 90%;" ou criar uma classe personalizada. */
+      background-color: $color-white; /* Bootstrap: Você pode usar as classes de cores do Bootstrap, como "bg-white". */
+      margin: auto; /* Bootstrap: Você pode usar as classes de alinhamento do Bootstrap, como "mx-auto" para centralizar horizontalmente. */
+      margin-bottom: 5%; /* Bootstrap: Você pode usar as classes de espaçamento do Bootstrap, como "mb-3" para adicionar margem inferior. */
+
+      div {
+          @extend .flexCenter; /* Bootstrap: Não aplicável ao Bootstrap, pois ele não suporta a extensão de classes como o Sass. Você precisará aplicar as propriedades individualmente. */
+          flex-direction: column; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap não usa flexbox dessa maneira. Você pode precisar de um layout personalizado. */
+          align-items: flex-start; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap não usa flexbox dessa maneira. Você pode precisar de um layout personalizado. */
+
+          .input-form {
+              @extend .flexCenter; /* Bootstrap: Não aplicável ao Bootstrap, pois ele não suporta a extensão de classes como o Sass. Você precisará aplicar as propriedades individualmente. */
+              width: 100%; /* Bootstrap: Não há uma classe direta para definir a largura em porcentagem. Você pode usar o estilo "width: 100%;" ou criar uma classe personalizada. */
+              height: 100%; /* Bootstrap: Não há uma classe direta para definir altura em porcentagem. Você pode usar o estilo "height: 100%;" ou criar uma classe personalizada. */
+              margin-bottom: 5%; /* Bootstrap: Você pode usar as classes de espaçamento do Bootstrap, como "mb-3" para adicionar margem inferior. */
+
+              .ico {
+                  height: 3%; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap não usa medidas relativas para elementos como ícones. Você pode precisar de estilos personalizados ou bibliotecas de ícones. */
+                  width: 6%; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap não usa medidas relativas para elementos como ícones. Você pode precisar de estilos personalizados ou bibliotecas de ícones. */
+                  position: absolute; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap geralmente usa o modelo de layout responsivo. */
+                  left: 10%; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap geralmente usa o modelo de layout responsivo. */
+              }
+
+              input,
+              select {
+                  height: 4vh; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap geralmente usa o modelo de layout responsivo. */
+                  width: 100%; /* Bootstrap: Não há uma classe direta para definir a largura em porcentagem. Você pode usar o estilo "width: 100%;" ou criar uma classe personalizada. */
+                  border: 0.1rem solid rgba(0, 0, 0, 0.2); /* Bootstrap: Você pode usar as classes de borda do Bootstrap, como "border" ou "border-dark". */
+                  text-indent: +15%; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap geralmente usa o modelo de layout responsivo. */
+                  font-size: 100%; /* Bootstrap: Não há uma classe direta para definir o tamanho da fonte em porcentagem. Você pode usar estilos personalizados. */
+
+                  &::placeholder {
+                      font-weight: bold; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap geralmente usa estilos de placeholder padrão do navegador. */
+                      text-align: start; /* Bootstrap: Não aplicável diret

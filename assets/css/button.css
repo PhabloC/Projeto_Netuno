@@ -1,0 +1,32 @@
+.btn {
+  border-radius: 1vh;
+  border: none;
+  background-color: #000000; /* Cor de fundo padrão do Bootstrap */
+  font-weight: 700;
+  transition: all 0.9s linear; /* Transição de 900ms convertida para 0.9s */
+  font-size: 1.8vh;
+}
+
+.btn:hover {
+  background-color: #007bff; /* Cor de destaque padrão do Bootstrap */
+  color: #000000; /* Cor de texto padrão do Bootstrap */
+  opacity: 0.9;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ffffff; /* Cor de texto padrão do Bootstrap */
+}
+
+.btn-black {
+  background-color: #000000; /* Cor de fundo padrão do Bootstrap */
+}
+
+.btn-black:hover {
+  background-color: #007bff; /* Cor de destaque padrão do Bootstrap */
+  color: #000000; /* Cor de texto padrão do Bootstrap */
+}
+
+.btn-black a {
+  color: #000000; /* Cor de texto padrão do Bootstrap */
+}

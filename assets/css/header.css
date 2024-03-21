@@ -1,0 +1,83 @@
+header {
+  background-color: #007bff; /* Cor azul padrão do Bootstrap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 10vh;
+}
+
+header .container img {
+  width: 17vh;
+  transition: all 300ms linear 0s;
+}
+
+header .container img:hover {
+  width: 17.3vh;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  margin: 1vh;
+  margin-right: 2vw;
+  text-align: center;
+}
+
+header nav ul li a {
+  color: #ffffff; /* Cor branca padrão do Bootstrap */
+  transition: all 300ms linear 0s;
+}
+
+header nav ul li a:hover {
+  font-weight: 900;
+  opacity: 0.8;
+}
+
+.header .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17vw;
+  max-width: 15rem;
+  height: 5vh;
+  min-height: 20%;
+  text-align: center;
+}
+
+.header .menu,
+.header .menu-arrow {
+  display: none;
+  padding: 2%;
+  text-align: center;
+  border-radius: 15%;
+  border: 0.1rem solid #007bff; /* Cor azul padrão do Bootstrap */
+}
+
+.header .menu:hover,
+.header .menu-arrow:hover {
+  border: 0.1rem solid #0056b3; /* Cor azul escuro padrão do Bootstrap */
+  background-color: #007bff; /* Cor azul padrão do Bootstrap */
+  cursor: pointer;
+}
+
+.separator {
+  width: 100%;
+  height: 0.1rem;
+  background-image: linear-gradient(
+    to right,
+    transparent 3%,
+    #ffffff,
+    transparent 97%
+  );
+}
