@@ -1,47 +1,259 @@
 form {
-  height: 97%; /* Bootstrap: Não há uma classe direta para definir altura em porcentagem. Você pode usar o estilo "height: 97vh;" ou criar uma classe personalizada. */
-  width: 94%; /* Bootstrap: Não há uma classe direta para definir a largura em porcentagem. Você pode usar o estilo "width: 94%;" ou criar uma classe personalizada. */
-  max-height: 90vh; /* Bootstrap: Não há uma classe direta para definir altura máxima em porcentagem da viewport. Você pode usar o estilo "max-height: 90vh;" ou criar uma classe personalizada. */
-  background-color: $color-white; /* Bootstrap: Você pode usar as classes de cores do Bootstrap, como "bg-white". */
-  z-index: 1000; /* Bootstrap: Não aplicável ao Bootstrap, pois ele é usado principalmente para empilhamento de camadas em elementos posicionados. */
-  border-radius: 1vw; /* Bootstrap: Você pode usar a classe "rounded" para arredondar os cantos do formulário. */
-  @extend .flexCenter; /* Bootstrap: Não aplicável ao Bootstrap, pois ele não suporta a extensão de classes como o Sass. Você precisará aplicar as propriedades individualmente. */
-  flex-direction: column; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap não usa flexbox dessa maneira. Você pode precisar de um layout personalizado. */
+  height: 97%;
+  width: 94%;
+  max-height: 90vh;
+  background-color: #ffffff;
+  z-index: 1000;
+  border-radius: 1vw;
+  display: flex;
+  justify-content: center;
+  /*   align-items: center;
+ */
+  flex-direction: column;
+}
 
-  .form-data {
-      font-size: 1.1vh; /* Bootstrap: Você pode definir o tamanho da fonte usando as classes de tipografia do Bootstrap, como "small" ou "text-sm". */
-      height: 35%; /* Bootstrap: Não há uma classe direta para definir altura em porcentagem. Você pode usar o estilo "height: 35%;" ou criar uma classe personalizada. */
-      width: 90%; /* Bootstrap: Não há uma classe direta para definir a largura em porcentagem. Você pode usar o estilo "width: 90%;" ou criar uma classe personalizada. */
-      background-color: $color-white; /* Bootstrap: Você pode usar as classes de cores do Bootstrap, como "bg-white". */
-      margin: auto; /* Bootstrap: Você pode usar as classes de alinhamento do Bootstrap, como "mx-auto" para centralizar horizontalmente. */
-      margin-bottom: 5%; /* Bootstrap: Você pode usar as classes de espaçamento do Bootstrap, como "mb-3" para adicionar margem inferior. */
+form .form-data {
+  font-size: 1.1vh;
+  height: 35%;
+  width: 90%;
+  background-color: #ffffff;
+  margin: auto;
+  margin-bottom: 5%;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
 
-      div {
-          @extend .flexCenter; /* Bootstrap: Não aplicável ao Bootstrap, pois ele não suporta a extensão de classes como o Sass. Você precisará aplicar as propriedades individualmente. */
-          flex-direction: column; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap não usa flexbox dessa maneira. Você pode precisar de um layout personalizado. */
-          align-items: flex-start; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap não usa flexbox dessa maneira. Você pode precisar de um layout personalizado. */
+.form-data div {
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start;
+  flex-direction: column;
+}
 
-          .input-form {
-              @extend .flexCenter; /* Bootstrap: Não aplicável ao Bootstrap, pois ele não suporta a extensão de classes como o Sass. Você precisará aplicar as propriedades individualmente. */
-              width: 100%; /* Bootstrap: Não há uma classe direta para definir a largura em porcentagem. Você pode usar o estilo "width: 100%;" ou criar uma classe personalizada. */
-              height: 100%; /* Bootstrap: Não há uma classe direta para definir altura em porcentagem. Você pode usar o estilo "height: 100%;" ou criar uma classe personalizada. */
-              margin-bottom: 5%; /* Bootstrap: Você pode usar as classes de espaçamento do Bootstrap, como "mb-3" para adicionar margem inferior. */
+.form-data .input-form {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center;
+  position: relative; */
+}
 
-              .ico {
-                  height: 3%; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap não usa medidas relativas para elementos como ícones. Você pode precisar de estilos personalizados ou bibliotecas de ícones. */
-                  width: 6%; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap não usa medidas relativas para elementos como ícones. Você pode precisar de estilos personalizados ou bibliotecas de ícones. */
-                  position: absolute; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap geralmente usa o modelo de layout responsivo. */
-                  left: 10%; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap geralmente usa o modelo de layout responsivo. */
-              }
+.form-data .input-form .ico {
+  height: 3%;
+  width: 4%;
+  position: absolute;
+  left: 10%;
+}
 
-              input,
-              select {
-                  height: 4vh; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap geralmente usa o modelo de layout responsivo. */
-                  width: 100%; /* Bootstrap: Não há uma classe direta para definir a largura em porcentagem. Você pode usar o estilo "width: 100%;" ou criar uma classe personalizada. */
-                  border: 0.1rem solid rgba(0, 0, 0, 0.2); /* Bootstrap: Você pode usar as classes de borda do Bootstrap, como "border" ou "border-dark". */
-                  text-indent: +15%; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap geralmente usa o modelo de layout responsivo. */
-                  font-size: 100%; /* Bootstrap: Não há uma classe direta para definir o tamanho da fonte em porcentagem. Você pode usar estilos personalizados. */
+.form-data .input-form input,
+.form-data .input-form select {
+  height: 4vh;
+  width: 100%;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  text-indent: 15%;
+  font-size: 10px;
+}
 
-                  &::placeholder {
-                      font-weight: bold; /* Bootstrap: Não aplicável diretamente, pois o Bootstrap geralmente usa estilos de placeholder padrão do navegador. */
-                      text-align: start; /* Bootstrap: Não aplicável diret
+.form-data .input-form input::placeholder,
+.form-data .input-form select::placeholder {
+  font-weight: bold;
+  text-align: start;
+  opacity: 0.5;
+}
+
+.form-data .input-form input:focus,
+.form-data .input-form select:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.form-data .input-form option:checked {
+  background-color: #7f8c8d;
+  font-weight: bold;
+  text-align: start;
+  opacity: 0.5;
+}
+
+.form-header {
+  height: 35%;
+  font-size: 1rem;
+}
+
+.form-header h2 {
+  font-size: 15px;
+  padding-right: 14rem;
+  opacity: 0.45;
+  margin-bottom: 2%;
+}
+
+.form-header h3 {
+  font-size: 10px;
+  padding-right: 16.5rem;
+  color: #3498db;
+  font-weight: 800;
+}
+
+.form-tec {
+  height: 25%;
+  width: 100%;
+  background-color: #1a7fbd;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-tec h2 {
+  color: #ffffff;
+  font-size: 0.8rem;
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+.form-tec label {
+  display: flex;
+  text-align: center;
+  width: 20%;
+  color: #ffffff;
+  justify-content: space-around;
+  margin-left: 2%;
+  font-size: 0.6rem;
+  align-items: center;
+}
+
+.form-tec label input {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  max-width: 50%;
+  max-height: 50%;
+  border: 0.1rem solid #ffffff;
+  border-radius: 5%;
+  outline: none;
+  cursor: pointer;
+  margin-right: -15%;
+  border-radius: 0.2rem;
+}
+
+.form-tec label input:checked {
+  background-color: #ffffff;
+  border-radius: 0.1rem;
+}
+
+.form-tec .item8,
+.form-tec .item3 {
+  min-width: 30%;
+}
+
+.form-group {
+  height: 35%;
+  width: 90%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2vh;
+}
+
+.form-group .working {
+  width: 100%;
+}
+
+.form-group .working h2 {
+  color: #1a7fbd;
+  margin-top: 6.5rem;
+  font-size: 0.8rem;
+}
+
+.form-group .boolean {
+  display: flex;
+  margin-top: 1%;
+  padding-bottom: 3%;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+.form-group .boolean label {
+  display: flex;
+  flex-direction: row;
+  padding-right: 1vw;
+  width: 15%;
+  align-items: center;
+}
+
+.form-group .boolean label input {
+  all: unset;
+  width: 1rem;
+  height: 1rem;
+  border: 0.1rem solid #1a7fbd;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-right: 8%;
+  position: relative;
+}
+
+.form-group .boolean label input:checked {
+  background-color: #1a7fbd;
+}
+
+.form-group .mark {
+  height: 0.1rem;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.2;
+}
+
+.form-group p {
+  text-align: center;
+  color: #1a7fbd;
+  font-size: 8px;
+  /* margin-bottom: 10%; */
+}
+
+.form-group .term {
+  margin-top: 5%;
+  width: 80%;
+}
+
+.form-group .term p {
+  font-size: 8px;
+  color: #000;
+  opacity: 0.7;
+  margin-bottom: 6.5rem;
+}
+
+.form-group .term a {
+  font-size: 1vh;
+  color: #1a7fbd;
+  opacity: 1;
+}
+
+.form-group .send {
+  max-height: 20%;
+  min-height: 6vh;
+  width: 100%;
+  background-color: #1a7fbd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group .send:hover {
+  background-color: #a4dcff;
+  border: 0.1rem solid #1a7fbd;
+}
+
+.form-group .send a {
+  font-size: 12px;
+  color: white;
+}

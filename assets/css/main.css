@@ -5,7 +5,7 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
+/* * {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@ html {
 }
 * h3 {
   font-size: 1vh;
-}
+} */
 
 .flexCenter,
 footer .btn,
@@ -152,15 +152,15 @@ body {
   font-weight: 800;
 }
 
-.btn {
+/* .btn {
   border-radius: 1vh;
   border-style: none;
   background-color: #000;
   font-weight: 700;
   transition: all 900ms linear 0s;
   font-size: 1.8vh;
-}
-.btn:hover {
+} */
+/* .btn:hover {
   background-color: #a4dcff;
   color: #000;
   opacity: 0.9;
@@ -186,80 +186,49 @@ body {
 .btn-black:hover a {
   text-decoration: none;
   color: #000;
-}
+} */
 
-header {
+/* header {
   background-color: #1a7fbd;
   flex-direction: column;
-}
+} */
 header .container {
   justify-content: space-around;
   width: 80%;
   height: 10vh;
 }
-header .container img {
+/* header .container img {
   width: 17vh;
   transition: all 300ms linear 0s;
-}
-header .container img:hover {
+} */
+/* header .container img:hover {
   width: 17.3vh;
-}
-header .container nav {
+} */
+/* header .container nav {
   display: flex;
   flex-wrap: wrap;
-}
-header .container nav ul {
+} */
+/* header .container nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-header .container nav ul li {
+} */
+/* header .container nav ul li {
   margin: 1vh;
   margin-right: 2vw;
   text-align: center;
-}
-header .container nav ul a {
+} */
+/* header .container nav ul a {
   color: #fff;
   transition: all 300ms linear 0s;
-}
-header .container nav ul a:hover {
+} */
+/* header .container nav ul a:hover {
   font-weight: 900;
   opacity: 0.8;
-}
-header .container .button {
-  width: 17vw;
-  max-width: 15rem;
-  height: 5vh;
-  min-height: 20%;
-  text-align: center;
-}
-header .container .menu {
-  display: none;
-  padding: 2%;
-  text-align: center;
-  border-radius: 15%;
-  border: 0.1rem solid #a4dcff;
-}
-header .container .menu:hover {
-  border: 0.1rem solid #1a7fbd;
-  background-color: #a4dcff;
-  cursor: pointer;
-}
-header .container .menu-arrow {
-  display: none;
-  z-index: 1000;
-  padding: 1%;
-  text-align: center;
-  border-radius: 15%;
-  border: 0.1rem solid #a4dcff;
-}
-header .container .menu-arrow:hover {
-  border: 0.1rem solid #1a7fbd;
-  background-color: #a4dcff;
-  cursor: pointer;
-}
-header .separator {
+} */
+
+/* header .separator {
   width: 100%;
   height: 0.1rem;
   background-image: linear-gradient(
@@ -268,21 +237,21 @@ header .separator {
     #fff,
     transparent 97%
   );
-}
+} */
 
 main {
   background-color: #1a7fbd;
   flex-direction: column;
 }
-main p {
+/* main p {
   font-weight: 540;
-}
-main .register {
+} */
+/* main .register {
   height: 100vh;
   width: 100%;
   background: url(../img/bannertopo.png) no-repeat -10vw;
   background-size: contain;
-}
+} */
 main .register .block-form {
   position: absolute;
   max-width: 70%;
@@ -452,7 +421,7 @@ main .goals h1 {
   padding-top: 5%;
 }
 
-form {
+/* form {
   height: 97%;
   width: 94%;
   max-height: 90vh;
@@ -460,71 +429,71 @@ form {
   z-index: 1000;
   border-radius: 1vw;
   flex-direction: column;
-}
-form .form-data {
+} */
+/* form .form-data {
   font-size: 1.1vh;
   height: 35%;
   width: 90%;
   background-color: #fff;
   margin: auto;
   margin-bottom: 5%;
-}
-form .form-data div {
+} */
+/* form .form-data div {
   flex-direction: column;
   align-items: flex-start;
-}
-form .form-data div .input-form {
+} */
+/* form .form-data div .input-form {
   width: 100%;
   height: 100%;
   margin-bottom: 5%;
-}
-form .form-data div .input-form .ico {
+} */
+/* form .form-data div .input-form .ico {
   height: 3%;
   width: 6%;
   position: absolute;
   left: 10%;
-}
-form .form-data div .input-form input,
+} */
+/* form .form-data div .input-form input,
 form .form-data div .input-form select {
   height: 4vh;
   width: 100%;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   text-indent: 15%;
   font-size: 100%;
-}
-form .form-data div .input-form input::-moz-placeholder,
+} */
+/* form .form-data div .input-form input::-moz-placeholder,
 form .form-data div .input-form select::-moz-placeholder {
   font-weight: bold;
   text-align: start;
   opacity: 0.5;
-}
-form .form-data div .input-form input::placeholder,
+} */
+/* form .form-data div .input-form input::placeholder,
 form .form-data div .input-form select::placeholder {
   font-weight: bold;
   text-align: start;
   opacity: 0.5;
-}
-form .form-data div .input-form input::-moz-placeholder:last-letter,
+} */
+/* form .form-data div .input-form input::-moz-placeholder:last-letter,
 form .form-data div .input-form select::-moz-placeholder:last-letter {
   color: blue;
-}
-form .form-data div .input-form input::placeholder:last-letter,
+} */
+/* form .form-data div .input-form input::placeholder:last-letter,
 form .form-data div .input-form select::placeholder:last-letter {
   color: blue;
-}
-form .form-data div .input-form input:focus,
+} */
+/* form .form-data div .input-form input:focus,
 form .form-data div .input-form select:focus {
   outline: none;
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.5);
-}
-form .form-data div .input-form input option:checked,
+} */
+/* form .form-data div .input-form input option:checked,
 form .form-data div .input-form select option:checked {
   background-color: #a4dcff;
   font-weight: bold;
   text-align: start;
   opacity: 0.5;
-}
-form .form-data .form-header {
+} */
+/* form .form-data .form-header {
   padding-left: 4%;
   height: 35%;
 }
@@ -536,7 +505,8 @@ form .form-data .form-header h3 {
   color: #1a7fbd;
   font-weight: 800;
 }
-form .form-tec {
+*/
+/* form .form-tec {
   height: 25%;
   width: 100%;
   background-color: #1a7fbd;
@@ -545,15 +515,15 @@ form .form-tec {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-form .form-tec h2 {
+} */
+/* form .form-tec h2 {
   color: #fff;
   font-size: 1.4vh;
   width: 100%;
   margin-left: 5%;
   margin-top: 1%;
-}
-form .form-tec label {
+} */
+/* form .form-tec label {
   display: flex;
   text-align: center;
   width: 20%;
@@ -562,8 +532,8 @@ form .form-tec label {
   margin-left: 2%;
   font-size: 1.2vh;
   align-items: center;
-}
-form .form-tec label input {
+} */
+/* form .form-tec label input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -577,46 +547,46 @@ form .form-tec label input {
   cursor: pointer;
   margin-right: -15%;
   border-radius: 0.2rem;
-}
-form .form-tec label input:checked {
+} */
+/* form .form-tec label input:checked {
   background-color: #fff;
   border-radius: 0.1rem;
-}
-form .form-tec .item8,
+} */
+/* form .form-tec .item8,
 form .form-tec .item3 {
   min-width: 30%;
-}
-form .form-group {
+} */
+/* form .form-group {
   height: 35%;
   width: 90%;
   background-color: #fff;
   flex-direction: column;
   font-size: 1.2vh;
-}
-form .form-group .working {
+} */
+/* form .form-group .working {
   margin-top: 5%;
   width: 100%;
-}
-form .form-group .working h2 {
+} */
+/* form .form-group .working h2 {
   color: #1a7fbd;
   font-size: 1.4vh;
-}
-form .form-group .boolean {
+} */
+/* form .form-group .boolean {
   display: flex;
   margin-top: 5%;
   padding-bottom: 7%;
   width: 100%;
   flex-direction: row;
   align-items: center;
-}
-form .form-group .boolean label {
+} */
+/* form .form-group .boolean label {
   display: flex;
   flex-direction: row;
   padding-right: 1vw;
   width: 15%;
   align-items: center;
-}
-form .form-group .boolean label input {
+} */
+/* form .form-group .boolean label input {
   all: unset;
   width: 1rem;
   height: 1rem;
@@ -625,37 +595,37 @@ form .form-group .boolean label input {
   cursor: pointer;
   margin-right: 8%;
   position: relative;
-}
-form .form-group .boolean label input:checked {
+} */
+/* form .form-group .boolean label input:checked {
   background-color: #1a7fbd;
-}
-form .form-group .mark {
+} */
+/* form .form-group .mark {
   height: 0.1rem;
   width: 100%;
   background-color: #000;
   opacity: 0.2;
-}
-form .form-group p {
+} */
+/* form .form-group p {
   text-align: center;
   color: #1a7fbd;
   font-size: 1vh;
   margin-bottom: 10%;
-}
-form .form-group .term {
+} */
+/* form .form-group .term {
   margin-top: 5%;
   width: 80%;
-}
-form .form-group .term p {
+} */
+/* form .form-group .term p {
   font-size: 1vh;
   color: #000;
   opacity: 0.7;
-}
-form .form-group .term a {
+} */
+/* form .form-group .term a {
   font-size: 1vh;
   color: #1a7fbd;
   opacity: 1;
-}
-form .form-group .send {
+} */
+/* form .form-group .send {
   max-height: 20%;
   min-height: 6vh;
   width: 100%;
@@ -663,14 +633,14 @@ form .form-group .send {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-form .form-group .send:hover {
+} */
+/* form .form-group .send:hover {
   background-color: #a4dcff;
   border: 0.1rem solid #1a7fbd;
-}
-form .form-group .send:hover a {
+} */
+/* form .form-group .send:hover a {
   color: #1a7fbd;
-}
+} */
 
 footer {
   background-color: #000;
@@ -748,131 +718,3 @@ footer div ul li {
 footer .contato p {
   margin-top: 10%;
 }
-
-@media screen and (max-width: 800px) {
-  header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-  }
-  header .container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  header .container nav {
-    display: none;
-    z-index: 100;
-    align-items: center;
-  }
-  header .container nav .items {
-    height: 40vw;
-    width: 100%;
-  }
-  header .container .menu {
-    display: block;
-  }
-  header .container .menu-arrow {
-    display: none;
-    z-index: 10000;
-  }
-  header .separator {
-    width: 100%;
-  }
-  main .register {
-    height: 85vh;
-  }
-  main .register .vector img {
-    display: block;
-  }
-  main .project {
-    height: 50vh;
-    justify-content: center;
-  }
-  main .project .img-dev {
-    display: none;
-  }
-  main .project .intro-project {
-    text-align: center;
-    min-width: 80%;
-    padding-left: 0;
-    font-size: 2vh;
-  }
-  main .problem {
-    height: auto;
-  }
-  main .problem .intro-problem {
-    text-align: center;
-    height: 50vh;
-  }
-  main .problem .intro-problem .woman {
-    display: none;
-  }
-  main .problem .intro-problem article {
-    width: 80%;
-    height: auto;
-  }
-  main .problem .card {
-    flex-direction: column;
-    margin-top: 0;
-  }
-  main .problem .card div {
-    width: 80%;
-    margin: 4%;
-  }
-  main .journey {
-    padding-top: 15%;
-    padding-bottom: 10%;
-    height: auto;
-  }
-  main .journey .top-journey img {
-    display: none;
-  }
-  main .journey .card-journey {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-  main .journey .card-journey .card-blue {
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-    margin-top: 5%;
-    padding: 2%;
-  }
-  main .journey .card-journey .card-blue div {
-    width: 0;
-    height: 0;
-  }
-  main .journey .card-journey .card-blue img {
-    width: 0;
-    height: 0;
-  }
-  main .goals {
-    height: auto;
-    padding-top: 5%;
-    padding-bottom: 10%;
-  }
-  main .goals .card {
-    flex-direction: column;
-    margin-top: 0;
-  }
-  main .goals .card div {
-    width: 80%;
-    margin: 4%;
-  }
-  main .card h2 {
-    font-size: 2vh;
-  }
-  footer .span-black .btn {
-    display: none;
-  }
-  footer .span-black .nav {
-    display: none;
-  }
-  footer .span-black .contato {
-    padding-left: 5%;
-  }
-} /*# sourceMappingURL=main.css.map */
