@@ -1,13 +1,15 @@
 main {
+  background-color: #1a7fbd; /* Substituído pelo valor direto */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-blue;
   flex-direction: column;
 }
+
 main p {
   font-weight: 540;
 }
+
 main .register {
   height: 100vh;
   width: 100%;
@@ -17,6 +19,7 @@ main .register {
   background: url(../img/bannertopo.png) no-repeat -10vw;
   background-size: contain;
 }
+
 main .register .block-form {
   position: absolute;
   max-width: 70%;
@@ -28,24 +31,20 @@ main .register .block-form {
   top: 15%;
   z-index: 1000;
 }
+
 main .register .block-form::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 2vh;
   border: 0.1vw solid transparent;
-  background: linear-gradient(
-      45deg,
-      $color-white,
-      transparent,
-      transparent,
-      $color-white
-    )
+  background: linear-gradient(45deg, #ffffff, transparent, transparent, #ffffff)
     border-box;
-  -webkit-mask: linear-gradient($color-white 0 0),
-    padding-box linear-gradient($color-white 0 0);
+  -webkit-mask: linear-gradient(#ffffff 0 0),
+    padding-box linear-gradient(#ffffff 0 0);
   mask-composite: exclude;
 }
+
 main .register .vector {
   display: flex;
   justify-content: flex-end;
@@ -54,6 +53,7 @@ main .register .vector {
   width: 100%;
   z-index: 1;
 }
+
 main .register .vector img {
   position: absolute;
   height: 30%;
@@ -61,6 +61,7 @@ main .register .vector img {
   top: 52.9%;
   z-index: -100;
 }
+
 main .project {
   width: 80%;
   height: 60vh;
@@ -79,7 +80,9 @@ main .project .img-dev {
   height: 60%;
   background: url(../img/dev.png) no-repeat;
   background-size: contain;
+  margin-right: 20rem; /* Adicione a margem direita para afastar a imagem do texto */
 }
+
 main .project .intro-project {
   position: absolute;
   right: 10%;
@@ -87,98 +90,116 @@ main .project .intro-project {
   min-width: 30%;
   flex-direction: column;
   padding-left: 5%;
-  color: $color-white;
+  color: #fff;
 }
+
 main .project .intro-project h1 {
-  color: $color-blue-l;
+  color: #a4dcff;
 }
+
 main .problem {
-  background-color: $color-white;
+  width: 100%;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin: auto;
   justify-content: center;
   align-items: center;
 }
+
 main .problem .intro-problem {
-  width: 80%;
+  width: 100%; /* Alteração */
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between; /* Alteração */
   align-items: center;
   height: 80vh;
 }
+
 main .problem .intro-problem .woman {
-  width: 50%;
+  width: 70%;
   height: 100%;
-  background-position: center;
   background-color: bisque;
-  background: url(../img/Container2.png) no-repeat;
-  background-size: contain;
+  background: url(../img/Container2.png) no-repeat center/contain; /* Alteração */
+  background-position-y: 8rem; /* Ajustar a posição vertical da imagem */
 }
+
 main .problem .intro-problem article {
-  position: absolute;
   display: flex;
   flex-direction: column;
   width: 40%;
   height: 60vh;
-  margin-top: 5%;
-  right: 10%;
+  margin-top: 20%;
+  margin-right: 10%;
 }
+
+.btn-register .highlight {
+  color: #1a7fbd; /* Definir a cor apenas para a palavra "Processo Seletivo" */
+}
+
 main .problem .intro-problem article h1 {
-  background: linear-gradient(to right, $color-blue, $color-blue-l);
+  background: linear-gradient(to right, #1a7fbd, #a4dcff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   min-height: 10%;
 }
+
 main .problem .intro-problem article h2 {
   font-weight: 900;
   min-height: 15%;
 }
+
 main .problem .intro-problem article div {
   width: 100%;
   height: 0.1vh;
-  background-color: $color-black;
+  background-color: #000;
   opacity: 0.2;
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
 main .problem .card {
+  /* display: flex; */
+  flex-direction: row;
   width: 80%;
-  position: relative;
-  margin-top: -15%;
+  border: 0;
+  margin-top: -50px;
 }
+
 main .journey {
-  background-color: $color-white;
+  background-color: #fff;
   width: 100%;
   min-height: 60vh;
-  display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
+
 main .journey .top-journey {
+  margin-top: 5rem;
   max-width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 main .journey .top-journey img {
   width: 50%;
 }
+
 main .journey .top-journey h1 {
-  background: linear-gradient(to right, $color-blue, $color-blue-l);
+  background: linear-gradient(to right, #1a7fbd, #a4dcff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   min-width: 30%;
   text-align: center;
 }
+
 main .journey .top-journey .inverter {
   transform: scaleX(-1);
 }
+
 main .journey .btn-register {
   display: flex;
   justify-content: space-around;
@@ -189,10 +210,13 @@ main .journey .btn-register {
   max-width: 50vh;
   text-align: center;
 }
+
 main .journey .vetor2 {
   margin-top: 2vh;
   align-items: flex-end;
+  margin-bottom: 5rem;
 }
+
 main .goals {
   width: 80vw;
   height: 60vh;
@@ -201,8 +225,13 @@ main .goals {
   align-items: center;
   flex-direction: column;
 }
+
 main .goals h1 {
-  color: $color-white;
+  color: #fff;
   font-weight: 900;
   padding-top: 5%;
+}
+
+main .goals .card {
+  flex-direction: row;
 }
