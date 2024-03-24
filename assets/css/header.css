@@ -1,15 +1,15 @@
 header {
   background-color: #1a7fbd;
-  /* background-color: #007bff; */
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
 header .container {
+  gap: 8rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   width: 80%;
   height: 10vh;
 }
@@ -58,25 +58,33 @@ header .items {
 }
 
 header .container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 17vw;
   max-width: 15rem;
   height: 5vh;
   min-height: 20%;
   text-align: center;
 }
-header .container .menu {
+
+header .container .menu,
+header .container .menu-arrow {
   display: none;
   padding: 2%;
   text-align: center;
   border-radius: 15%;
   border: 0.1rem solid #a4dcff;
 }
-header .container .menu:hover {
+
+header .container .menu:hover,
+header .container .menu-arrow:hover {
   border: 0.1rem solid #1a7fbd;
   background-color: #a4dcff;
   cursor: pointer;
 }
-header .container .menu-arrow {
+
+/* header .container .menu-arrow {
   display: none;
   z-index: 1000;
   padding: 1%;
@@ -84,11 +92,12 @@ header .container .menu-arrow {
   border-radius: 15%;
   border: 0.1rem solid #a4dcff;
 }
+
 header .container .menu-arrow:hover {
   border: 0.1rem solid #1a7fbd;
   background-color: #a4dcff;
   cursor: pointer;
-}
+} */
 
 /* header .button {
   display: flex;
@@ -132,10 +141,10 @@ header .container .menu-arrow:hover {
   );
 }
 
-body header div {
+/* body header div {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80vw;
   height: 10vh;
-}
+} */

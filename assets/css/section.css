@@ -160,10 +160,8 @@ main .problem .intro-problem article div {
 }
 
 main .problem .card {
-  /* display: flex; */
   flex-direction: row;
   width: 80%;
-  border: 0;
   margin-top: -50px;
 }
 
