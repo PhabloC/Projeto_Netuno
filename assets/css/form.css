@@ -235,10 +235,10 @@ form .form-group .send {
   justify-content: center;
 }
 
-form .form-group .send:hover {
+/* form .form-group .send:hover {
   background-color: #b3c6e7;
   border: 0.1rem solid #1a7fbd;
-}
+} */
 
 form .form-group .send a {
   color: white;

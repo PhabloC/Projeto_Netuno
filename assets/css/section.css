@@ -121,14 +121,14 @@ main .problem .intro-problem .woman {
   height: 100%;
   background-color: bisque;
   background: url(../img/Container2.png) no-repeat center/contain; /* Alteração */
-  background-position-y: 8rem; /* Ajustar a posição vertical da imagem */
+  /* background-position-y: 8rem; */ /* Ajustar a posição vertical da imagem */
 }
 
 main .problem .intro-problem article {
   display: flex;
   flex-direction: column;
   width: 40%;
-  height: 60vh;
+  height: 100vh;
   margin-top: 20%;
   margin-right: 10%;
 }
@@ -155,15 +155,15 @@ main .problem .intro-problem article div {
   height: 0.1vh;
   background-color: #000;
   opacity: 0.2;
-  margin-top: 5%;
+  margin-top: -5%;
   margin-bottom: 5%;
 }
 
-main .problem .card {
+/* main .problem .card {
   flex-direction: row;
   width: 80%;
   margin-top: -50px;
-}
+} */
 
 main .journey {
   background-color: #fff;
@@ -174,7 +174,7 @@ main .journey {
 }
 
 main .journey .top-journey {
-  margin-top: 5rem;
+  margin-top: 10rem;
   max-width: 60%;
   display: flex;
   justify-content: center;
@@ -227,9 +227,10 @@ main .goals {
 main .goals h1 {
   color: #fff;
   font-weight: 900;
-  padding-top: 5%;
+  /* padding-top: 3%; */
+  padding-bottom: 3rem;
 }
 
-main .goals .card {
+/* main .goals .card {
   flex-direction: row;
-}
+} */
