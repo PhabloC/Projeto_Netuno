@@ -10,18 +10,10 @@ main .problem .card {
   background: transparent;
 }
 
-.goals-section {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-}
-
 main .problem .card h2 {
   text-transform: capitalize;
   width: 100%;
-  font-size: 2vw;
+  font-size: 1.5rem;
   text-align: center;
 }
 

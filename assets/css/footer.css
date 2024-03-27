@@ -37,9 +37,9 @@ footer .soc .logo-slogan {
   height: 80%;
 }
 
-footer .soc .logo-slogan:hover {
+/* footer .soc .logo-slogan:hover {
   width: 82%;
-}
+} */
 
 footer .soc ul {
   display: flex;

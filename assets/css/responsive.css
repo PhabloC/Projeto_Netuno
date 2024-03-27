@@ -1,4 +1,5 @@
-@media screen and (max-width: 800px) {
+/* Estilos responsivos para o cabeçalho */
+@media screen and (max-width: 768px) {
   header {
     display: flex;
     align-items: center;
@@ -26,49 +27,152 @@
     display: none;
     z-index: 10000;
   }
+
   header .separator {
     width: 100%;
   }
+
+  .btn-res {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+  }
+
+  .btn-register {
+    padding-left: 10rem;
+  }
+
   main .register {
-    height: 85vh;
+    width: 10rem;
+    border-radius: 5rem;
   }
+
+  main .block-form {
+    border-radius: 5rem;
+  }
+
   main .register .vector img {
-    display: block;
-  }
-  main .project {
-    height: 50vh;
-    justify-content: center;
-  }
-  main .project .img-dev {
     display: none;
   }
-  main .project .intro-project {
-    text-align: center;
-    min-width: 80%;
-    padding-left: 0;
-    font-size: 2vh;
+
+  main .project {
+    flex-direction: column;
+    height: auto;
+    margin-top: -5rem;
+    margin-bottom: 5rem;
   }
+
+  main .project .img-dev {
+    width: 80%;
+    margin-right: 0;
+  }
+
+  main .project .intro-project {
+    position: relative;
+    max-width: 100%;
+    width: 90%;
+    margin-top: 2rem;
+    right: unset;
+    text-align: center;
+  }
+
   main .problem {
     height: auto;
+    align-items: center;
+    padding: 2rem;
   }
+
   main .problem .intro-problem {
-    text-align: center;
-    height: 50vh;
-  }
-  main .problem .intro-problem .woman {
-    display: none;
-  }
-  main .problem .intro-problem article {
-    width: 80%;
+    flex-direction: column;
     height: auto;
+    align-items: center;
+    justify-content: center;
   }
+
+  main .problem .intro-problem .woman {
+    width: 90%;
+    height: 30vh;
+    margin: 2rem 0;
+  }
+
+  main .problem .intro-problem article {
+    width: 90%;
+    margin: 2rem 0;
+    text-align: center;
+    margin-bottom: -20rem;
+  }
+
   main .problem .card {
     flex-direction: column;
     margin-top: 0;
   }
   main .problem .card div {
-    width: 80%;
+    width: 90%;
     margin: 4%;
+  }
+
+  main .journey .top-journey {
+    margin-top: 2rem;
+    max-width: 100%;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .journey .top-journey img {
+    width: 80%;
+  }
+
+  main .journey .top-journey h1 {
+    font-size: 1.2rem;
+    min-width: unset;
+    margin-top: 1rem;
+  }
+
+  main .journey .btn-register {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  main .journey .btn-register a {
+    width: 100%;
+  }
+
+  main .journey .vetor2 {
+    display: none;
+  }
+
+  main .goals {
+    width: 90%;
+    height: auto;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  main .goals h1 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  main .goals-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .goals-card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .btn-black {
+    font-size: 1.4vh; /* Ajuste o tamanho da fonte conforme necessário */
+    padding: 0.2rem 0.4rem; /* Ajuste o preenchimento conforme necessário */
   }
 
   main .journey {
@@ -100,22 +204,7 @@
     width: 0;
     height: 0;
   }
-  main .goals {
-    height: auto;
-    padding-top: 5%;
-    padding-bottom: 10%;
-  }
-  main .goals .card {
-    flex-direction: column;
-    margin-top: 0;
-  }
-  main .goals .card div {
-    width: 80%;
-    margin: 4%;
-  }
-  main .card h2 {
-    font-size: 2vh;
-  }
+
   footer .span-black .btn {
     display: none;
   }
@@ -124,5 +213,10 @@
   }
   footer .span-black .contato {
     padding-left: 5%;
+  }
+
+  main .submit {
+    align-items: center;
+    justify-content: center;
   }
 }
