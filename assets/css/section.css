@@ -1,5 +1,5 @@
 main {
-  background-color: #1a7fbd; /* Substituído pelo valor direto */
+  background-color: #1a7fbd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +80,7 @@ main .project .img-dev {
   height: 60%;
   background: url(../img/dev.png) no-repeat;
   background-size: contain;
-  margin-right: 20rem; /* Adicione a margem direita para afastar a imagem do texto */
+  margin-right: 20rem;
 }
 
 main .project .intro-project {
@@ -108,10 +108,10 @@ main .problem {
 }
 
 main .problem .intro-problem {
-  width: 100%; /* Alteração */
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Alteração */
+  justify-content: space-between;
   align-items: center;
   height: 80vh;
 }
@@ -120,8 +120,7 @@ main .problem .intro-problem .woman {
   width: 70%;
   height: 100%;
   background-color: bisque;
-  background: url(../img/Container2.png) no-repeat center/contain; /* Alteração */
-  /* background-position-y: 8rem; */ /* Ajustar a posição vertical da imagem */
+  background: url(../img/Container2.png) no-repeat center/contain;
 }
 
 main .problem .intro-problem article {
@@ -134,7 +133,7 @@ main .problem .intro-problem article {
 }
 
 .btn-register .highlight {
-  color: #1a7fbd; /* Definir a cor apenas para a palavra "Processo Seletivo" */
+  color: #1a7fbd;
 }
 
 main .problem .intro-problem article h1 {
@@ -158,12 +157,6 @@ main .problem .intro-problem article div {
   margin-top: -5%;
   margin-bottom: 5%;
 }
-
-/* main .problem .card {
-  flex-direction: row;
-  width: 80%;
-  margin-top: -50px;
-} */
 
 main .journey {
   background-color: #fff;
@@ -227,10 +220,6 @@ main .goals {
 main .goals h1 {
   color: #fff;
   font-weight: 900;
-  /* padding-top: 3%; */
   padding-bottom: 3rem;
+  font-size: 1.5rem;
 }
-
-/* main .goals .card {
-  flex-direction: row;
-} */

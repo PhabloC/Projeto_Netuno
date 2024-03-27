@@ -34,7 +34,6 @@ form .form-data .input-form {
   width: 100%;
   height: 100%;
   margin-bottom: 5%;
-  /* position: relative; */
 }
 
 form .form-data .input-form .ico {
@@ -159,7 +158,6 @@ form .form-group .working {
 form .form-group .working h2 {
   color: #1a7fbd;
   font-size: 1.4vh;
-  /* margin-top: 5%; */
 }
 
 form .form-group .boolean {
@@ -204,7 +202,6 @@ form .form-group p {
   text-align: center;
   color: #0066ff;
   font-size: 1vh;
-  /* margin-bottom: 10%; */
 }
 
 form .form-group .term {
@@ -234,11 +231,6 @@ form .form-group .send {
   align-items: center;
   justify-content: center;
 }
-
-/* form .form-group .send:hover {
-  background-color: #b3c6e7;
-  border: 0.1rem solid #1a7fbd;
-} */
 
 form .form-group .send a {
   color: white;
