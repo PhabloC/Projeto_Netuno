@@ -3,14 +3,17 @@ function clickMenuShow() {
   document.querySelector(".container").style.display = "flex";
   document.querySelector(".container").style.flexDirection = "column";
   document.querySelector(".container").style.marginTop = "25%";
-  document.querySelector(".items").style.flexDirection = "column";
+  document.querySelector(".items").style.flexDirection = "row";
+  document.querySelector(".nav-menu").style.marginTop = "-5rem";
   document.querySelector("nav").style.display = "block";
   document.querySelector(".menu-arrow").style.display = "block";
+  document.querySelector(".menu-arrow").style.marginTop = "-15rem";
   document.querySelector(".btn-res").style.display = "none";
   document.querySelector(".separator").style.display = "none";
   document.querySelector(".block-form").style.marginTop = "45%";
   document.querySelector(".vector3").style.marginTop = "45%";
 }
+
 function clickMenuClose() {
   location.reload();
 }
